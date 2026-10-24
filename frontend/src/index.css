@@ -1,0 +1,46 @@
+/* Global styles: Tailwind + the shared classes (.btn-primary, .card, .field ...). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-navy;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-2.5 min-h-[44px] text-sm font-bold transition focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-tealDark/40 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-white hover:bg-tealDark;
+  }
+  .btn-outline {
+    @apply btn border-2 border-navy text-navy hover:bg-navy hover:text-white;
+  }
+  .btn-dark {
+    @apply btn bg-white text-navy border border-navy/20 hover:bg-navy hover:text-white;
+  }
+  .btn-danger {
+    @apply btn border border-amber-700 text-amber-800 hover:bg-amber-700 hover:text-white;
+  }
+  .field {
+    @apply w-full rounded-lg border border-navy/25 bg-white px-3 py-2 min-h-[44px] text-navy placeholder-navy/40 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-tealDark/30 focus-visible:border-tealDark;
+  }
+  .label {
+    @apply block text-sm font-semibold text-navy/90 mb-1;
+  }
+  .err {
+    @apply mt-1 text-sm font-semibold text-amber-800;
+  }
+  .card {
+    @apply rounded-2xl bg-white border border-navy/10 p-5 shadow-sm;
+  }
+  .card-hover {
+    @apply transition duration-300 ease-out hover:-translate-y-1.5 hover:border-tealDark/50 hover:shadow-xl hover:shadow-navy/10 motion-reduce:transition-none motion-reduce:hover:translate-y-0;
+  }
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-4;
+  }
+}

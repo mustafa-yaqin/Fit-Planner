@@ -1,0 +1,13 @@
+{
+  "name": "fit-planner",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "npm --prefix frontend install",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "server": "npm --prefix backend run dev",
+    "start": "npm --prefix backend start",
+    "create-admin": "npm --prefix backend run create-admin"
+  }
+}
