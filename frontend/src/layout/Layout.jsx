@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       '/contact': 'contact', '/login': 'login', '/register': 'register', '/admin': 'admin', '/privacy': 'privacy',
     }
     const key = keys[pathname]
-    document.title = (key && pathname !== '/' ? t(key) + ' · ' : '') + 'FitPlanner'
+    document.title = (key && pathname !== '/' ? t(key) + ' · ' : '') + 'Fit-Planner'
   }, [pathname, lang, t])
 
   return (

@@ -3,10 +3,3 @@ frontend/dist
 backend/data
 backend/uploads
 *.log
-
-backend/
-
-.env
-.env.*
-!.env.example
-node_modules/
